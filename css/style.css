@@ -23,7 +23,7 @@
     --glass-blur: 16px;
 
     /* Spacing & Layout */
-    --container-width: 1000px;
+    --container-width: 1200px;
     --header-height: 70px;
 
     /* Transitions */
@@ -69,20 +69,38 @@ body {
     /* Fallback */
 }
 
-/* Custom Cursor */
-/* Simple rounded cursor to replace default pointer */
+/* Custom Cursor - Themed Arrow */
+/* Custom Cursor - Dynamic Circle */
 body,
 a,
 button,
 input,
 textarea {
+    /* Dark Mode (Default): Mint Circle */
     cursor: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="6" fill="%234fd1c5" fill-opacity="0.8"/></svg>') 12 12, auto;
 }
 
+/* Hover State - Dark Mode: Larger Ring */
 a:hover,
 button:hover,
 .btn:hover {
     cursor: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8" stroke="%234fd1c5" stroke-width="2" fill="none"/></svg>') 12 12, pointer;
+}
+
+[data-theme="light"] body,
+[data-theme="light"] a,
+[data-theme="light"] button,
+[data-theme="light"] input,
+[data-theme="light"] textarea {
+    /* Light Mode: Dark Circle */
+    cursor: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="6" fill="%2305110f" fill-opacity="0.8"/></svg>') 12 12, auto;
+}
+
+[data-theme="light"] a:hover,
+[data-theme="light"] button:hover,
+[data-theme="light"] .btn:hover {
+    /* Light Mode Hover: Dark Ring */
+    cursor: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8" stroke="%2305110f" stroke-width="2" fill="none"/></svg>') 12 12, pointer;
 }
 
 a {
@@ -133,7 +151,7 @@ p {
 }
 
 .section-padding {
-    padding: 120px 0 80px;
+    padding: 80px 0;
 }
 
 .glass {
@@ -306,7 +324,7 @@ p {
 }
 
 .quote-banner {
-    padding: 60px 0;
+    padding: 40px 0;
     background: linear-gradient(90deg, transparent, rgba(79, 209, 197, 0.05), transparent);
     text-align: center;
     border-top: 1px solid var(--glass-border);

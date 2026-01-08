@@ -118,9 +118,10 @@
                     </div>
                     <h3>Gemini Autonomous Agent</h3>
                     <p>
-                        A fully autonomous agent built with Flask and Gemini 2.0. It breaks down high-level user goals
-                        into executable steps, dynamically utilizing Google Search and News APIs to gather information,
-                        synthesize findings, and execute complex workflows without constant human supervision.
+                        Engineered a self-correcting agentic loop using <strong>Gemini 2.0 Flash</strong>. The system
+                        implements a 'Thought-Action-Observation' cycle, allowing it to critique its own search results
+                        from Google Search API before synthesizing a final answer. Handles multi-step errors gracefully
+                        without user intervention.
                     </p>
                     <div
                         style="margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; width: 100%;">
@@ -129,8 +130,8 @@
                                 style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Gemini
                                 2.0</span>
                             <span
-                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Google
-                                Search API</span>
+                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">ReAct
+                                Loop</span>
                         </div>
                         <a href="https://github.com/ZaidK07/Gemini-Autonomous-Agent-Demo" target="_blank"
                             class="btn btn-secondary"
@@ -154,9 +155,10 @@
                     </div>
                     <h3>Conversational Doc Search</h3>
                     <p>
-                        An intelligent RAG assistant capable of 'chatting' with your documents. It uses Gemini 2.5
-                        Vision to ingest PDFs, images, and audio files, creating a multi-modal semantic index. Features
-                        include citations, source tracking, and context-aware responses.
+                        A Multi-modal RAG assistant using <strong>Gemini 1.5 Pro Vision</strong>. Implemented a chunking
+                        strategy that preserves table structures and image context. The query engine uses hybrid search
+                        to retrieve precise technical specs from PDF manuals and diagrams, minimizing hallucination via
+                        strict context grounding.
                     </p>
                     <div
                         style="margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; width: 100%;">
@@ -164,8 +166,7 @@
                             <span
                                 style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">RAG</span>
                             <span
-                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Gemini
-                                Vision</span>
+                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Multi-Modal</span>
                         </div>
                         <a href="https://github.com/ZaidK07/Conversational-Document-Search-Assistant" target="_blank"
                             class="btn btn-secondary"
@@ -185,9 +186,10 @@
                     </div>
                     <h3>RL Server Autoscaler</h3>
                     <p>
-                        Performance-critical infrastructure optimization using Deep Reinforcement Learning. A generic
-                        DQN agent trained in a custom Gymnasium environment to make real-time scaling decisions,
-                        balancing the trade-off between server costs and response latency.
+                        Solved the cold-start vs. idle-cost trade-off using a custom <strong>DQN Agent</strong>.
+                        Designed a strict Gymnasium environment simulating varying load spikes. The agent learned
+                        optimal scaling policies that outperformed standard threshold-based autoscalers by anticipating
+                        demand surges.
                     </p>
                     <div
                         style="margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; width: 100%;">
@@ -195,8 +197,7 @@
                             <span
                                 style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">PyTorch</span>
                             <span
-                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Reinforcement
-                                Learning</span>
+                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">DQN</span>
                         </div>
                         <a href="https://github.com/ZaidK07/Reinforced-Learning-Demo" target="_blank"
                             class="btn btn-secondary"
@@ -219,9 +220,9 @@
                     </div>
                     <h3>Offline Voice Chatbot</h3>
                     <p>
-                        A privacy-first voice assistant that runs 100% locally. It integrates Vosk for real-time speech
-                        recognition, Ministral 3B (via Llama.cpp) for intelligence, and Kokoro for high-quality,
-                        natural-sounding speech synthesis—no internet required.
+                        Achieved <200ms latency on local hardware by pipelining <strong>Vosk (STT), Ministral 3B, and
+                            Kokoro (TTS)</strong>. Optimized the inference loop to stream tokens directly into the audio
+                            synthesizer, creating a near-instant conversational experience without any external APIs.
                     </p>
                     <div
                         style="margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; width: 100%;">
@@ -230,7 +231,8 @@
                                 style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Local
                                 LLM</span>
                             <span
-                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Privacy</span>
+                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Latency
+                                Opt</span>
                         </div>
                         <a href="https://github.com/ZaidK07/Offline-Voice-Chatbot" target="_blank"
                             class="btn btn-secondary"
@@ -254,9 +256,9 @@
                     </div>
                     <h3>Resume Scoring System</h3>
                     <p>
-                        An adaptive recruitment tool that scores resumes against job descriptions. Unique for its
-                        'Human-in-the-Loop' memory: it uses Pinecone to store recruiter feedback, allowing the scoring
-                        algorithm to learn and align with specific hiring preferences over time.
+                        Designed a <strong>semantic matching engine</strong> that bypasses keyword stuffing. Uses
+                        Pinecone to store candidate embeddings and a feedback loop where recruiter accept/reject actions
+                        fine-tune the scoring algorithm, adapting to specific organizational hiring patterns.
                     </p>
                     <div
                         style="margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; width: 100%;">
@@ -286,9 +288,10 @@
                     </div>
                     <h3>Email Briefing Assistant</h3>
                     <p>
-                        An automated executive assistant that lives in the background. It polls the Gmail API for new
-                        messages, filters for importance, uses Gemini to summarize thread contexts and attachments, and
-                        pushes concise daily briefings to Slack or WhatsApp.
+                        Developed a background service that polls Gmail API efficiently. It parses complex HTML threads
+                        and attachments, sending them to Gemini for summarization. The key innovation was a
+                        <strong>relevance filter</strong> that learned to distinguish 'urgency' from noise based on
+                        sender history.
                     </p>
                     <div
                         style="margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; width: 100%;">
