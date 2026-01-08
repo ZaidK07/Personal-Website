@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,7 +20,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="nav-logo">zaid<span class="text-accent">.ai</span></a>
+            <a href="index.html" class="nav-logo">Zaid <span class="text-accent">Khanusiya</span></a>
 
             <div class="hamburger">
                 <span class="bar"></span>
@@ -34,7 +35,21 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li>
                     <button id="theme-toggle" class="btn btn-secondary"
-                        style="padding: 6px 16px; font-size: 0.8rem;">Light</button>
+                        style="padding: 8px; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%;">
+                        <!-- Icon will be injected by JS or we can put SVG here directly -->
+                        <svg id="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </button>
                 </li>
             </ul>
         </div>
@@ -68,16 +83,24 @@
                     </div>
                     <h3>Gemini Autonomous Agent</h3>
                     <p>
-                        A Flask-based agent powered by Gemini 2.0 Flash that performs real-world tasks like searching
-                        the web, managing emails, and aggregating news autonomously.
+                        A fully autonomous agent built with Flask and Gemini 2.0. It breaks down high-level user goals
+                        into executable steps, dynamically utilizing Google Search and News APIs to gather information,
+                        synthesize findings, and execute complex workflows without constant human supervision.
                     </p>
-                    <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
-                        <span
-                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Gemini
-                            2.0</span>
-                        <span
-                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Google
-                            Search API</span>
+                    <div
+                        style="margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; width: 100%;">
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Gemini
+                                2.0</span>
+                            <span
+                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Google
+                                Search API</span>
+                        </div>
+                        <a href="https://github.com/ZaidK07/Gemini-Autonomous-Agent-Demo" target="_blank"
+                            class="btn btn-secondary"
+                            style="padding: 6px 12px; font-size: 0.75rem; width: auto; white-space: nowrap;">View
+                            Code</a>
                     </div>
                 </div>
 
@@ -96,15 +119,23 @@
                     </div>
                     <h3>Conversational Doc Search</h3>
                     <p>
-                        Intelligent search agent using Gemini 2.5 Flash and semantic vector search. Processes PDFs,
-                        Images, and Audio to provide context-aware answers from your documents.
+                        An intelligent RAG assistant capable of 'chatting' with your documents. It uses Gemini 2.5
+                        Vision to ingest PDFs, images, and audio files, creating a multi-modal semantic index. Features
+                        include citations, source tracking, and context-aware responses.
                     </p>
-                    <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
-                        <span
-                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">RAG</span>
-                        <span
-                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Gemini
-                            Vision</span>
+                    <div
+                        style="margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; width: 100%;">
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">RAG</span>
+                            <span
+                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Gemini
+                                Vision</span>
+                        </div>
+                        <a href="https://github.com/ZaidK07/Conversational-Document-Search-Assistant" target="_blank"
+                            class="btn btn-secondary"
+                            style="padding: 6px 12px; font-size: 0.75rem; width: auto; white-space: nowrap;">View
+                            Code</a>
                     </div>
                 </div>
 
@@ -119,15 +150,23 @@
                     </div>
                     <h3>RL Server Autoscaler</h3>
                     <p>
-                        Deep Q-Network (DQN) agent that learns to automatically scale server resources based on CPU
-                        load. Optimizes for performance and cost efficiency.
+                        Performance-critical infrastructure optimization using Deep Reinforcement Learning. A generic
+                        DQN agent trained in a custom Gymnasium environment to make real-time scaling decisions,
+                        balancing the trade-off between server costs and response latency.
                     </p>
-                    <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
-                        <span
-                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">PyTorch</span>
-                        <span
-                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Reinforcement
-                            Learning</span>
+                    <div
+                        style="margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; width: 100%;">
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">PyTorch</span>
+                            <span
+                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Reinforcement
+                                Learning</span>
+                        </div>
+                        <a href="https://github.com/ZaidK07/Reinforced-Learning-Demo" target="_blank"
+                            class="btn btn-secondary"
+                            style="padding: 6px 12px; font-size: 0.75rem; width: auto; white-space: nowrap;">View
+                            Code</a>
                     </div>
                 </div>
 
@@ -145,15 +184,23 @@
                     </div>
                     <h3>Offline Voice Chatbot</h3>
                     <p>
-                        Privacy-focused voice assistant running 100% locally. Uses Vosk for STT, Llama.cpp for LLM
-                        (Ministral 3B), and Kokoro for high-quality TTS.
+                        A privacy-first voice assistant that runs 100% locally. It integrates Vosk for real-time speech
+                        recognition, Ministral 3B (via Llama.cpp) for intelligence, and Kokoro for high-quality,
+                        natural-sounding speech synthesis—no internet required.
                     </p>
-                    <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
-                        <span
-                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Local
-                            LLM</span>
-                        <span
-                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Privacy</span>
+                    <div
+                        style="margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; width: 100%;">
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Local
+                                LLM</span>
+                            <span
+                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Privacy</span>
+                        </div>
+                        <a href="https://github.com/ZaidK07/Offline-Voice-Chatbot" target="_blank"
+                            class="btn btn-secondary"
+                            style="padding: 6px 12px; font-size: 0.75rem; width: auto; white-space: nowrap;">View
+                            Code</a>
                     </div>
                 </div>
 
@@ -172,14 +219,22 @@
                     </div>
                     <h3>Resume Scoring System</h3>
                     <p>
-                        AI-powered resume evaluator with Human-in-the-Loop feedback. Uses Pinecone vector DB to learn
-                        from user feedback and adapt scoring criteria over time.
+                        An adaptive recruitment tool that scores resumes against job descriptions. Unique for its
+                        'Human-in-the-Loop' memory: it uses Pinecone to store recruiter feedback, allowing the scoring
+                        algorithm to learn and align with specific hiring preferences over time.
                     </p>
-                    <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
-                        <span
-                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Pinecone</span>
-                        <span
-                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">LangChain</span>
+                    <div
+                        style="margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; width: 100%;">
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Pinecone</span>
+                            <span
+                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">LangChain</span>
+                        </div>
+                        <a href="https://github.com/ZaidK07/Personalized-Resume-Scoring-System" target="_blank"
+                            class="btn btn-secondary"
+                            style="padding: 6px 12px; font-size: 0.75rem; width: auto; white-space: nowrap;">View
+                            Code</a>
                     </div>
                 </div>
 
@@ -196,15 +251,23 @@
                     </div>
                     <h3>Email Briefing Assistant</h3>
                     <p>
-                        Background agent that monitors Gmail, analyzes attachments using Gemini, and sends concise
-                        executive briefings to Slack or WhatsApp.
+                        An automated executive assistant that lives in the background. It polls the Gmail API for new
+                        messages, filters for importance, uses Gemini to summarize thread contexts and attachments, and
+                        pushes concise daily briefings to Slack or WhatsApp.
                     </p>
-                    <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
-                        <span
-                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Gmail
-                            API</span>
-                        <span
-                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Automation</span>
+                    <div
+                        style="margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; width: 100%;">
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Gmail
+                                API</span>
+                            <span
+                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Automation</span>
+                        </div>
+                        <a href="https://github.com/ZaidK07/Automated-Email-Briefing-Assistant" target="_blank"
+                            class="btn btn-secondary"
+                            style="padding: 6px 12px; font-size: 0.75rem; width: auto; white-space: nowrap;">View
+                            Code</a>
                     </div>
                 </div>
 
@@ -220,14 +283,23 @@
                     </div>
                     <h3>Product Insight (SQL RAG)</h3>
                     <p>
-                        RAG system where products are stored in SQL, converted to embeddings for semantic search, and
-                        analyzed by LLMs for comparison and summarization.
+                        Bridging structured data with unstructured semantic search. This system converts SQL product
+                        catalogs into vector embeddings, enabling natural language queries like 'Show me
+                        high-performance laptops under $1000' that combine semantic understanding with strict SQL
+                        filtering.
                     </p>
-                    <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
-                        <span
-                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">SQL</span>
-                        <span
-                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Embeddings</span>
+                    <div
+                        style="margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; width: 100%;">
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">SQL</span>
+                            <span
+                                style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Embeddings</span>
+                        </div>
+                        <a href="https://github.com/ZaidK07/Product-Insight-System" target="_blank"
+                            class="btn btn-secondary"
+                            style="padding: 6px 12px; font-size: 0.75rem; width: auto; white-space: nowrap;">View
+                            Code</a>
                     </div>
                 </div>
 

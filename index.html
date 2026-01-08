@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -21,7 +22,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="nav-logo">zaid<span class="text-accent">.ai</span></a>
+            <a href="index.html" class="nav-logo">Zaid <span class="text-accent">Khanusiya</span></a>
 
             <div class="hamburger">
                 <span class="bar"></span>
@@ -61,19 +62,31 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <div class="hero-content animate-up">
-                <span class="hero-sub">— AI/ML Engineer</span>
-                <h1 style="margin-bottom: 24px;">
-                    Building Intelligent <br>
-                    <span class="text-gradient">Agentic Systems.</span>
-                </h1>
-                <p style="font-size: 1.15rem; max-width: 500px; margin-bottom: 40px;">
-                    I design and deploy autonomous agents and RAG pipelines that solve complex problems.
-                    Merging deeper research with production-grade engineering.
-                </p>
-                <div style="display: flex; gap: 16px;">
-                    <a href="projects.html" class="btn btn-primary">View Work</a>
-                    <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+            <div class="hero-grid">
+                <!-- Left: Profile Picture -->
+                <div class="hero-img-container animate-up delay-1">
+                    <img src="assets/Profile_pic.jpeg" alt="Zaid Khanusiya" class="profile-pic">
+                    <!-- Decorative backdrop element -->
+                    <div
+                        style="position: absolute; top: -20px; left: -20px; width: 100%; height: 100%; border: 2px solid var(--accent-color); border-radius: 24px; opacity: 0.3; z-index: 1;">
+                    </div>
+                </div>
+
+                <!-- Right: Intro -->
+                <div class="hero-content animate-up">
+                    <span class="hero-sub">— AI/ML Engineer</span>
+                    <h1 style="margin-bottom: 24px;">
+                        Building Intelligent <br>
+                        <span class="text-gradient">Agentic Systems.</span>
+                    </h1>
+                    <p style="font-size: 1.15rem; margin-bottom: 40px;">
+                        I design and deploy autonomous agents and RAG pipelines that solve complex problems.
+                        Merging deeper research with production-grade engineering.
+                    </p>
+                    <div class="btn-wrapper" style="display: flex; gap: 16px;">
+                        <a href="projects.html" class="btn btn-primary">View Work</a>
+                        <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -84,8 +97,82 @@
         </div>
     </section>
 
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
+    <!-- Quote Banner -->
+    <section class="quote-banner">
+        <div class="container">
+            <blockquote
+                style="font-size: 1.35rem; font-style: italic; color: var(--text-primary); max-width: 800px; margin: 0 auto; line-height: 1.6;">
+                "Complexity is the failure of imagination. Power lies in the brutal simplification of the impossible."
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Essential Expertise -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="animate-up" style="margin-bottom: 40px; font-size: 2rem;">What I <span
+                    class="text-gradient">Build</span></h2>
+
+            <div class="grid-3">
+                <!-- Specialized Agents -->
+                <div class="card animate-up delay-1">
+                    <div
+                        style="width: 48px; height: 48px; background: rgba(79, 209, 197, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+                            <path d="M12 12 2.1 12a10 10 0 0 1 17.8-5.3"></path>
+                            <path d="m12 12 4.09 6.13a10 10 0 0 1-13.04-1.14"></path>
+                        </svg>
+                    </div>
+                    <h3>Autonomous Agents</h3>
+                    <p>
+                        Systems that plan, reason, and execute actions independently. From browsing the web to managing
+                        complex email workflows.
+                    </p>
+                </div>
+
+                <!-- RAG Systems -->
+                <div class="card animate-up delay-2">
+                    <div
+                        style="width: 48px; height: 48px; background: rgba(79, 209, 197, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>RAG Pipelines</h3>
+                    <p>
+                        Connecting LLMs to private knowledge bases. High-accuracy retrieval using vector databases and
+                        semantic reranking.
+                    </p>
+                </div>
+
+                <!-- Backend Engineering -->
+                <div class="card animate-up delay-3">
+                    <div
+                        style="width: 48px; height: 48px; background: rgba(79, 209, 197, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Scalable Backend</h3>
+                    <p>
+                        Robust APIs served via Flask/FastAPI. Dockerized microservices designed for production stability
+                        and easy deployment.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="js/main.js"></script>
 </body>
 
 </html>

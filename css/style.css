@@ -262,9 +262,73 @@ p {
     overflow: hidden;
 }
 
-.hero-content {
-    max-width: 650px;
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
     z-index: 2;
+}
+
+.hero-content {
+    max-width: 100%;
+}
+
+.hero-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.profile-pic {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 24px;
+    border: 2px solid var(--glass-border);
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.02);
+}
+
+.quote-banner {
+    padding: 60px 0;
+    background: linear-gradient(90deg, transparent, rgba(79, 209, 197, 0.05), transparent);
+    text-align: center;
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+    margin-top: 0;
+}
+
+@media (max-width: 900px) {
+    .profile-pic {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin: 0 auto;
+    }
+
+    .hero-content .btn-wrapper {
+        justify-content: center;
+    }
 }
 
 .hero-sub {
@@ -278,20 +342,53 @@ p {
 }
 
 /* Cards (Projects/Skills) */
+/* Masonry Layout */
 .grid-3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 24px;
+    column-count: 2;
+    column-gap: 32px;
+}
+
+@media (max-width: 1024px) {
+    .grid-3 {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-3 {
+        column-count: 1;
+    }
 }
 
 .card {
     background: var(--bg-secondary);
     border: 1px solid var(--glass-border);
-    padding: 32px;
+    padding: 24px;
+    /* Reduced from 32px for better density */
     border-radius: 16px;
     transition: all 0.3s var(--ease-out);
     position: relative;
     overflow: hidden;
+    margin-bottom: 24px;
+    /* Space between items in masonry */
+    break-inside: avoid;
+    /* Prevent split across columns */
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 1.25rem;
+    /* Slightly smaller for better balance */
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--text-secondary);
 }
 
 .card:hover {
