@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Zaid Khanusiya</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">zaid<span class="text-accent">.ai</span></a>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" class="btn btn-secondary"
+                        style="padding: 6px 16px; font-size: 0.8rem;">Light</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="section-padding" style="padding-bottom: 40px;">
+        <div class="container">
+            <h1 class="animate-up">Selected <span class="text-gradient">Work</span></h1>
+            <p class="animate-up delay-1" style="max-width: 600px;">
+                A collection of agents, RAG systems, and ML pipelines I've built.
+                Focusing on real-world utility and performance.
+            </p>
+        </div>
+    </section>
+
+    <!-- Project Grid -->
+    <section class="section-padding" style="padding-top: 0;">
+        <div class="container">
+            <div class="grid-3">
+                <!-- Project 1: Gemini Autonomous Agent -->
+                <div class="card animate-up delay-1">
+                    <div
+                        style="height: 160px; background: linear-gradient(135deg, #0f3d39 0%, #05110f 100%); display: flex; align-items: center; justify-content: center; margin: -32px -32px 32px -32px; border-bottom: 1px solid var(--glass-border);">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3>Gemini Autonomous Agent</h3>
+                    <p>
+                        A Flask-based agent powered by Gemini 2.0 Flash that performs real-world tasks like searching
+                        the web, managing emails, and aggregating news autonomously.
+                    </p>
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+                        <span
+                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Gemini
+                            2.0</span>
+                        <span
+                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Google
+                            Search API</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Conversational Doc Search -->
+                <div class="card animate-up delay-2">
+                    <div
+                        style="height: 160px; background: linear-gradient(135deg, #0f3d39 0%, #05110f 100%); display: flex; align-items: center; justify-content: center; margin: -32px -32px 32px -32px; border-bottom: 1px solid var(--glass-border);">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Conversational Doc Search</h3>
+                    <p>
+                        Intelligent search agent using Gemini 2.5 Flash and semantic vector search. Processes PDFs,
+                        Images, and Audio to provide context-aware answers from your documents.
+                    </p>
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+                        <span
+                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">RAG</span>
+                        <span
+                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Gemini
+                            Vision</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: RL Server Autoscaler -->
+                <div class="card animate-up delay-3">
+                    <div
+                        style="height: 160px; background: linear-gradient(135deg, #0f3d39 0%, #05110f 100%); display: flex; align-items: center; justify-content: center; margin: -32px -32px 32px -32px; border-bottom: 1px solid var(--glass-border);">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>RL Server Autoscaler</h3>
+                    <p>
+                        Deep Q-Network (DQN) agent that learns to automatically scale server resources based on CPU
+                        load. Optimizes for performance and cost efficiency.
+                    </p>
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+                        <span
+                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">PyTorch</span>
+                        <span
+                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Reinforcement
+                            Learning</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: Offline Voice Chatbot -->
+                <div class="card animate-up delay-1">
+                    <div
+                        style="height: 160px; background: linear-gradient(135deg, #0f3d39 0%, #05110f 100%); display: flex; align-items: center; justify-content: center; margin: -32px -32px 32px -32px; border-bottom: 1px solid var(--glass-border);">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                            <line x1="12" y1="19" x2="12" y2="23"></line>
+                            <line x1="8" y1="23" x2="16" y2="23"></line>
+                        </svg>
+                    </div>
+                    <h3>Offline Voice Chatbot</h3>
+                    <p>
+                        Privacy-focused voice assistant running 100% locally. Uses Vosk for STT, Llama.cpp for LLM
+                        (Ministral 3B), and Kokoro for high-quality TTS.
+                    </p>
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+                        <span
+                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Local
+                            LLM</span>
+                        <span
+                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Privacy</span>
+                    </div>
+                </div>
+
+                <!-- Project 5: Resume Scoring System -->
+                <div class="card animate-up delay-2">
+                    <div
+                        style="height: 160px; background: linear-gradient(135deg, #0f3d39 0%, #05110f 100%); display: flex; align-items: center; justify-content: center; margin: -32px -32px 32px -32px; border-bottom: 1px solid var(--glass-border);">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Resume Scoring System</h3>
+                    <p>
+                        AI-powered resume evaluator with Human-in-the-Loop feedback. Uses Pinecone vector DB to learn
+                        from user feedback and adapt scoring criteria over time.
+                    </p>
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+                        <span
+                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Pinecone</span>
+                        <span
+                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">LangChain</span>
+                    </div>
+                </div>
+
+                <!-- Project 6: Automated Email Briefing -->
+                <div class="card animate-up delay-3">
+                    <div
+                        style="height: 160px; background: linear-gradient(135deg, #0f3d39 0%, #05110f 100%); display: flex; align-items: center; justify-content: center; margin: -32px -32px 32px -32px; border-bottom: 1px solid var(--glass-border);">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Email Briefing Assistant</h3>
+                    <p>
+                        Background agent that monitors Gmail, analyzes attachments using Gemini, and sends concise
+                        executive briefings to Slack or WhatsApp.
+                    </p>
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+                        <span
+                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Gmail
+                            API</span>
+                        <span
+                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Automation</span>
+                    </div>
+                </div>
+
+                <!-- Project 7: Product Insight & SQL RAG -->
+                <div class="card animate-up delay-1">
+                    <div
+                        style="height: 160px; background: linear-gradient(135deg, #0f3d39 0%, #05110f 100%); display: flex; align-items: center; justify-content: center; margin: -32px -32px 32px -32px; border-bottom: 1px solid var(--glass-border);">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 3v18h18" />
+                            <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3" />
+                        </svg>
+                    </div>
+                    <h3>Product Insight (SQL RAG)</h3>
+                    <p>
+                        RAG system where products are stored in SQL, converted to embeddings for semantic search, and
+                        analyzed by LLMs for comparison and summarization.
+                    </p>
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto;">
+                        <span
+                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">SQL</span>
+                        <span
+                            style="font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: rgba(79, 209, 197, 0.1); color: var(--accent-color);">Embeddings</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Zaid Khanusiya</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .form-control {
+            background: var(--bg-secondary);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            padding: 12px 16px;
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px var(--glass-border);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .social-link {
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+
+        .social-link:hover {
+            opacity: 1;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">zaid<span class="text-accent">.ai</span></a>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" class="btn btn-secondary"
+                        style="padding: 8px; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%;">
+                        <svg id="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="section-padding" style="padding-bottom: 40px;">
+        <div class="container">
+            <h1 class="animate-up">Let's <span class="text-gradient">Collaborate</span></h1>
+            <p class="animate-up delay-1" style="max-width: 600px;">
+                Interested in Agentic AI, RAG, or building the next generation of intelligent software? Let's talk.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="section-padding" style="padding-top: 0;">
+        <div class="container">
+            <div class="glass" style="padding: 40px; border-radius: 16px; max-width: 800px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+                    <!-- Contact Info -->
+                    <div class="animate-up delay-2">
+                        <h3 style="margin-bottom: 24px;">Get in touch</h3>
+                        <div style="display: flex; flex-direction: column; gap: 24px;">
+                            <div>
+                                <h4 style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 4px;">Email
+                                </h4>
+                                <a href="mailto:zaidk.dev@gmail.com" class="text-accent"
+                                    style="font-size: 1.1rem;">zaidk.dev@gmail.com</a>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 4px;">Socials
+                                </h4>
+                                <div style="display: flex; gap: 16px;">
+                                    <a href="https://github.com/ZaidK07" target="_blank" class="social-link">GitHub</a>
+                                    <a href="#" class="social-link">LinkedIn</a>
+                                    <a href="#" class="social-link">Twitter / X</a>
+                                </div>
+                            </div>
+
+                            <div
+                                style="margin-top: 24px; padding: 24px; background: rgba(79, 209, 197, 0.05); border-radius: 12px;">
+                                <p style="margin-bottom: 0; font-size: 0.9rem; font-style: italic;">
+                                    "Complexity is the faliure of imagination. power lies in the brutal simplification
+                                    of the impossible."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="animate-up delay-3">
+                        <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent (demo)!');">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" class="form-control"
+                                    placeholder="Tell me about your project..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+
+    <!-- Inline styles for mobile layout adjustment because of the grid split -->
+    <style>
+        @media (max-width: 768px) {
+            .glass>div {
+                /* The grid container */
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</body>
+
+</html>

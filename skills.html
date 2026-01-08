@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Zaid Khanusiya</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">zaid<span class="text-accent">.ai</span></a>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" class="btn btn-secondary"
+                        style="padding: 8px; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%;">
+                        <!-- Icon will be injected by JS or we can put SVG here directly -->
+                        <svg id="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="section-padding" style="padding-bottom: 40px;">
+        <div class="container">
+            <h1 class="animate-up">Technical <span class="text-gradient">Arsenal</span></h1>
+            <p class="animate-up delay-1" style="max-width: 600px;">
+                The tools and technologies I use to build intelligent systems.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Grid -->
+    <section class="section-padding" style="padding-top: 0;">
+        <div class="container">
+            <div class="grid-3">
+                <!-- Skill Category 1 -->
+                <div class="card animate-up delay-1">
+                    <h3
+                        style="margin-bottom: 16px; border-bottom: 1px solid var(--glass-border); padding-bottom: 12px; display:flex; align-items:center; gap:10px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+                            <path d="M12 12 2.1 12a10 10 0 0 1 17.8-5.3"></path>
+                            <path d="m12 12 4.09 6.13a10 10 0 0 1-13.04-1.14"></path>
+                        </svg>
+                        Agentic AI
+                    </h3>
+                    <ul style="display: flex; flex-direction: column; gap: 8px;">
+                        <li style="color: var(--text-secondary);">Google GenAI (Gemini 2.5 Flash)</li>
+                        <li style="color: var(--text-secondary);">Autonomous Agent Architectures</li>
+                        <li style="color: var(--text-secondary);">Tool Use (Search, Email, News)</li>
+                        <li style="color: var(--text-secondary);">Offline Local LLMs (Llama.cpp)</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="card animate-up delay-2">
+                    <h3
+                        style="margin-bottom: 16px; border-bottom: 1px solid var(--glass-border); padding-bottom: 12px; display:flex; align-items:center; gap:10px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        RAG Systems
+                    </h3>
+                    <ul style="display: flex; flex-direction: column; gap: 8px;">
+                        <li style="color: var(--text-secondary);">Vector Databases (Pinecone, Qdrant)</li>
+                        <li style="color: var(--text-secondary);">Semantic Search & Embeddings</li>
+                        <li style="color: var(--text-secondary);">Optical Character Recognition (OCR)</li>
+                        <li style="color: var(--text-secondary);">Audio Transcription & Analysis</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="card animate-up delay-3">
+                    <h3
+                        style="margin-bottom: 16px; border-bottom: 1px solid var(--glass-border); padding-bottom: 12px; display:flex; align-items:center; gap:10px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m16.5 9.4 1.5 1.5"></path>
+                            <path d="m21 16-1.5 1.5"></path>
+                            <path d="M12 2v6"></path>
+                            <path d="M12 16v6"></path>
+                            <path d="M2 12h6"></path>
+                            <path d="M16 12h6"></path>
+                            <path d="m4.9 19.1 1.5-1.5"></path>
+                            <path d="m9.4 4.9 1.5 1.5"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        Backend & ML
+                    </h3>
+                    <ul style="display: flex; flex-direction: column; gap: 8px;">
+                        <li style="color: var(--text-secondary);">Python 3.10+, Flask, FastAPI</li>
+                        <li style="color: var(--text-secondary);">Reinforcement Learning (RL / DQN)</li>
+                        <li style="color: var(--text-secondary);">PyTorch & Gymnasium</li>
+                        <li style="color: var(--text-secondary);">Human-in-the-Loop Systems</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 4 -->
+                <div class="card animate-up delay-2">
+                    <h3
+                        style="margin-bottom: 16px; border-bottom: 1px solid var(--glass-border); padding-bottom: 12px; display:flex; align-items:center; gap:10px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 3v18h18" />
+                            <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3" />
+                        </svg>
+                        Integrations
+                    </h3>
+                    <ul style="display: flex; flex-direction: column; gap: 8px;">
+                        <li style="color: var(--text-secondary);">Gmail API & Automation</li>
+                        <li style="color: var(--text-secondary);">Slack & WhatsApp APIs</li>
+                        <li style="color: var(--text-secondary);">Google Custom Search API</li>
+                        <li style="color: var(--text-secondary);">Speech-to-Text (Vosk, Kokoro)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
