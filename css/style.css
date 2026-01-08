@@ -179,14 +179,20 @@ p {
 }
 
 .btn-secondary {
-    background: transparent;
-    border: 1px solid var(--glass-border);
+    background: rgba(79, 209, 197, 0.15);
+    /* Stronger visibility, distinct from tags */
+    border: 1px solid rgba(79, 209, 197, 0.3);
+    /* Visible border */
     color: var(--text-primary);
+    border-radius: 8px;
+    /* More squared */
 }
 
 .btn-secondary:hover {
+    background: rgba(79, 209, 197, 0.25);
     border-color: var(--accent-color);
     color: var(--accent-color);
+    box-shadow: 0 0 15px rgba(79, 209, 197, 0.1);
 }
 
 /* Navbar */
@@ -284,7 +290,8 @@ p {
 
 .profile-pic {
     width: 320px;
-    height: 320px;
+    height: 380px;
+    /* Increased vertical space by ~20% */
     object-fit: cover;
     border-radius: 24px;
     border: 2px solid var(--glass-border);
